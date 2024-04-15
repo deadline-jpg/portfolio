@@ -18,8 +18,9 @@
     <script defer src="script.js"></script>
   </head>
   <body>
-    <div class="container">
+    
       <header>
+        <div class="container header">
         <h1>John Stephenson</h1>
         <nav>
           <ul class="menu">
@@ -27,7 +28,7 @@
             <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li>
             <li>
-              <a href="https://www.github.com/">
+              <a href="https://www.github.com/" target="_blank">
                 <span
                   class="fa-brands fa-square-github"
                   aria-hidden="true"
@@ -36,15 +37,47 @@
               </a>
             </li>
           </ul>
+          </div>
         </nav>
       </header>
 
       <section class="intro">
-        <p>Hi, I'm John.</p>
+        <div class="container">
+        <p>Hi, I'm <span class="name">John.</span></p>
         <h2>I'm a front-end developer.</h2>
         <p>I specialise in HTML, CSS & Javascript.</p>
-        <p>Currently, I'm completing the <a href=""></a>Coding Skills Bootcamp at iO Academy.</p>
+        <p>
+          Currently, I'm completing the
+          <a
+            href="https://io-academy.uk/courses/coding-skills-bootcamp/"
+            target="_blank"
+            >Coding Skills Bootcamp at iO Academy.</a
+          >
+        </p>
+        </div>
       </section>
-    </div>
+
+      <section class="projects" id="projects">
+        <div class="container">
+          <h2>Projects</h2>
+          <div class="topgrid">
+          <figure>
+            <a href="#"
+              ><img src="/images/project.jpg" alt="project screenshot"
+            /></a>
+            <figcaption>
+              <a href="#" target="_blank">
+                <h3>Some Future Project</h3>
+                <ul>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>Javascript</li>
+                </ul>
+              </a>
+            </figcaption>
+          </figure>
+        </div>
+        </div>
+      </section>
   </body>
 </html>
