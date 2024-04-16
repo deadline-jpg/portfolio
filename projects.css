@@ -1,0 +1,56 @@
+@import url("base.css");
+
+.project-details {
+  background-color: var(--primary-color);
+}
+
+.back-button {
+  padding-top: 3rem;
+  font-size: var(--h4);
+  display: flex;
+  align-items: center;
+}
+
+.back-arrow {
+  width: 4rem;
+  height: 4rem;
+  transform: scaleX(-1);
+}
+
+.back-arrow:hover {
+  fill: var(--quinary-color);
+}
+
+.back-button a {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+.back-button a:hover {
+  text-decoration: underline;
+  color: var(--quinary-color);
+}
+
+#back-text {
+  padding-bottom: 10px;
+}
+
+.project-box {
+  padding: 3rem 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: start;
+  gap: 3rem;
+}
+
+.project-box img {
+  width: 100%;
+  height: auto;
+}
+
+.project-box h2,
+p {
+  margin-top: 0;
+  padding-top: 0;
+}
