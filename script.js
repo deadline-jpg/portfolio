@@ -1,4 +1,4 @@
-const leftArrow = document.getElementById("left-arrow");
+/* const leftArrow = document.getElementById("left-arrow");
 const rightArrow = document.getElementById("right-arrow");
 const figure = document.getElementById("project-container");
 let clickCounter = 1;
@@ -61,4 +61,4 @@ leftArrow.addEventListener("click", function (clickCounter) {
 
 rightArrow.addEventListener("click", function (event) {
   console.log(clickCounter);
-});
+}); */
