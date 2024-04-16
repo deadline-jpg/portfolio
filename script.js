@@ -6,6 +6,7 @@ fetch("projects.json")
     return res.json();
   })
   .then((data) => {
+    console.log(data);
     data.data.forEach((element) => {
       printTile(element);
     });
@@ -15,11 +16,11 @@ fetch("projects.json")
 function printTile(element) {
   projectSlides.innerHTML += `
     <figure class="project--figure" id="slide-${element.id}">
-              <a href="#">
+              <a href="projects.html">
                 <img src="${element.img}" alt="project screenshot"
               /></a>
               <figcaption>
-                <a href="#" target="_blank">
+                <a href="projects.html" target="_blank">
                   <h3>${element.name}</h3>
                   <ul>
                     <li>${element.tech1}</li>
@@ -31,3 +32,4 @@ function printTile(element) {
             </figure>`;
 }
 
+// Add event listener to buttons
