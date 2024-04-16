@@ -241,7 +241,7 @@
     cursor: pointer;
   }
 
-  .projects .slider-button:visited {
+  .projects .slider-button:active {
     background-color: var(--tertiary-color);
     transform: scale(1.1);
   }
