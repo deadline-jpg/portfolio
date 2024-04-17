@@ -68,7 +68,7 @@
     background-color: var(--secondary-color);
     color: var(--primary-color);
     margin: 0;
-    padding: 4rem 0 4rem 0;
+    padding: 4rem 0 8rem 0;
   }
 
   .projects h2 {
@@ -164,7 +164,11 @@
     text-align: center;
     grid-row: 2/3;
     grid-column: 1/2;
-  } 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+  }
 
   figure .full-display {
     grid-row: 1/3;
@@ -179,19 +183,18 @@
     display: block;
   }
 
-  figure .full-display #close-button {
+  figure .full-display .close-button {
     width: 5rem;
     height: 5rem;
     fill: var(--quaternary-color);
-  }
-
-  figure .full-display #close-button:hover {
-    transform: scale(1.1);
-  }
-
-  figure .full-display .close-box {
-    text-align: end;
     margin-right: 2rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+
+  figure .full-display .close-button:hover {
+    transform: scale(1.1);
     cursor: pointer;
   }
 
@@ -221,10 +224,17 @@
     background-color: var(--quinary-color);
     color: var(--quaternary-color);
     opacity: 0.9;
+  }
+
+  figcaption .open-button:hover {
     cursor: pointer;
   }
 
-  figcaption h3 {
+  .full-display .open-button:hover {
+    cursor: default;
+  }
+
+  figcaption .project-name {
     margin-bottom: 0;
     font-size: var(--h5);
   }
@@ -240,5 +250,27 @@
   figcaption li {
     display: inline-block;
     margin: 0 0.25rem;
+  }
+}
+
+@layer about {
+  .about {
+    padding: 4rem 0 4rem 0;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 3rem;
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+  }
+
+  .about img {
+    grid-column: 2/3;
+    grid-row: 1/3;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 }
