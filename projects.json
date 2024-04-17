@@ -8,10 +8,9 @@
       "tech1": "HTML",
       "tech2": "CSS",
       "tech3": "JavaScript",
-      "para1": "Could be anything, about anything.",
-      "para2": "A project about a project.",
-      "para3": "Some random words",
-      "para4": "Yet more random words!"
+      "para1": "Wayfarers taiyaki chillwave, tofu cornhole whatever air plant cliche palo santo skateboard chicharrones tbh narwhal godard gentrify.",
+      "para2": "Venmo neutral milk hotel portland, woke chia waistcoat hoodie man braid yes plz irony activated charcoal umami ramps fam sustainable.",
+      "link": "https://github.com/"
     },
     {
       "id": 2,
@@ -20,7 +19,10 @@
       "name": "Another Future Project",
       "tech1": "React",
       "tech2": "Tailwind",
-      "tech3": "JavaScript"
+      "tech3": "JavaScript",
+      "para1": "Grailed freegan shaman synth, kinfolk thundercats yes plz tonx tattooed slow-carb hell of aesthetic humblebrag.",
+      "para2": "3 wolf moon plaid 90's ascot. Food truck prism cornhole, gatekeep hella hot chicken echo park paleo af truffaut selvage humblebrag.",
+      "link": "https://github.com/"
     },
     {
       "id": 3,
@@ -29,7 +31,10 @@
       "name": "And Another One",
       "tech1": "PHP",
       "tech2": "Javascript",
-      "tech3": "CSS"
+      "tech3": "CSS",
+      "para1": "You probably haven't heard of them ethical whatever 8-bit, typewriter small batch 90's edison bulb hell of cold-pressed crucifix hoodie.",
+      "para2": " Blackbird spyplane small batch chillwave cronut four dollar toast dreamcatcher tumblr williamsburg.",
+      "link": "https://github.com/"
     }
   ]
 }
