@@ -17,14 +17,21 @@
     />
     <script defer src="script.js"></script>
   </head>
-  <body>
+  <body class="body">
     <header>
       <div class="container header">
         <h1>John Stephenson</h1>
-        <button class="menu-button"><span class="fa-solid fa-bars" aria-hidden="true"></span><span class="sr-only">Menu</span></button>
-        <button class="close-menu"><svg class="close-icon" width="1200pt" height="1200pt" version="1.1" viewBox="0 0 1200 1200" xmlns="http://www.w3.org/2000/svg">
-          <path d="m600 300c79.566 0 155.87 31.605 212.13 87.867 56.262 56.262 87.867 132.57 87.867 212.13s-31.605 155.87-87.867 212.13c-56.262 56.262-132.57 87.867-212.13 87.867s-155.87-31.605-212.13-87.867c-56.262-56.262-87.867-132.57-87.867-212.13s31.605-155.87 87.867-212.13c56.262-56.262 132.57-87.867 212.13-87.867zm56.25 300 83.062-83.062c10.047-10.047 13.973-24.695 10.293-38.418-3.6758-13.727-14.398-24.449-28.125-28.125-13.723-3.6797-28.371 0.24609-38.418 10.293l-83.062 83.062-83.062-83.062c-10.047-10.047-24.695-13.973-38.418-10.293-13.727 3.6758-24.449 14.398-28.125 28.125-3.6797 13.723 0.24609 28.371 10.293 38.418l83.062 83.062-83.062 83.062c-10.047 10.047-13.973 24.695-10.293 38.418 3.6758 13.727 14.398 24.449 28.125 28.125 13.723 3.6797 28.371-0.24609 38.418-10.293l83.062-83.062 83.062 83.062c10.047 10.047 24.695 13.973 38.418 10.293 13.727-3.6758 24.449-14.398 28.125-28.125 3.6797-13.723-0.24609-28.371-10.293-38.418z"/>
-         </svg></button>
+        <button class="menu-button">
+          <span class="fa-solid fa-bars" aria-hidden="true"></span
+          ><span class="sr-only">Menu</span>
+        </button>
+        <button class="close-menu">
+          <span
+            class="close-icon fa-solid fa-circle-xmark"
+            aria-hidden="true"
+          ></span
+          ><span class="sr-only">Close</span>
+        </button>
         <nav class="nav">
           <ul class="menu">
             <li><a href="#projects">Projects</a></li>
@@ -65,17 +72,17 @@
         <h2>Projects</h2>
         <div class="slider">
           <div class="slides"></div>
-          <a href="#slide-1"
+          <a class="slide-link" href="#slide-1"
             ><button class="slider-button">
               <span class="sr-only">Project 1</span>
             </button></a
           >
-          <a href="#slide-2"
+          <a class="slide-link" href="#slide-2"
             ><button class="slider-button">
               <span class="sr-only">Project 2</span>
             </button></a
           >
-          <a href="#slide-3"
+          <a class="slide-link" href="#slide-3"
             ><button class="slider-button">
               <span class="sr-only">Project 3</span>
             </button></a
@@ -115,14 +122,18 @@
           <div class="line-right"></div>
         </div>
         <div class="contact-box">
-          <a href="mailto:johnlouisstephenson@gmail.com" target="_blank"><span class="fa-solid fa-envelope" aria-hidden="true"></span><span class="sr-only">Email</span></a>
-         <a href="https://www.linkedin.com" target="_blank"><span class="fa-brands fa-linkedin" aria-hidden="true"></span><span class="sr-only">LinkedIn</span></a>
+          <a href="mailto:johnlouisstephenson@gmail.com" target="_blank"
+            ><span class="fa-solid fa-envelope" aria-hidden="true"></span
+            ><span class="sr-only">Email</span></a
+          >
+          <a href="https://www.linkedin.com" target="_blank"
+            ><span class="fa-brands fa-linkedin" aria-hidden="true"></span
+            ><span class="sr-only">LinkedIn</span></a
+          >
           <a href="https://www.github.com/" target="_blank">
-            <span
-              class="fa-brands fa-square-github"
-              aria-hidden="true"
-            ></span>
-            <span class="sr-only">Github</span>
+            <span class="fa-brands fa-square-github" aria-hidden="true"></span>
+            <span class="sr-only">Github</span></a
+          >
         </div>
       </div>
     </section>

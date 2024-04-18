@@ -70,6 +70,13 @@
   }
 
   @media (max-width: 700px) {
+    .body-no-scroll {
+      overflow: hidden;
+    }
+
+    header {
+      padding-top: 1rem;
+    }
     header .menu-button {
       display: block;
     }
@@ -81,19 +88,20 @@
       top: 60px;
       left: -100%;
       padding-top: 60px;
+      transition: left 0.2s ease-in-out;
     }
 
     .nav-visible {
       left: 0;
     }
     .close-icon {
-      fill: var(--secondary-color);
-      height: 40px;
-      width: 40px;
+      color: var(--secondary-color);
+      font-size: 1.5rem;
     }
 
     .close-icon:hover {
-      fill: var(--quinary-color);
+      color: var(--quinary-color);
+      cursor: pointer;
     }
 
     .close-menu {
@@ -150,6 +158,19 @@
   .intro h2 {
     font-size: calc(var(--h2) * 2);
     margin: 2rem 0;
+  }
+
+  .intro a:hover {
+    color: var(--quinary-color);
+  }
+  @media (max-width: 700px) {
+    .intro h2 {
+      font-size: var(--h2);
+    }
+    .intro p {
+      font-size: var(--small);
+      padding: 0.5rem 0;
+    }
   }
 }
 
@@ -341,6 +362,41 @@
     display: inline-block;
     margin: 0 0.25rem;
   }
+
+  @media (max-width: 700px) {
+    .projects {
+      padding: 4rem 0 4rem 0;
+    }
+    .projects h2 {
+      text-align: center;
+      font-size: var(--h4);
+    }
+    .projects .slides {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      overflow-x: hidden;
+    }
+    .projects .slide-link,
+    .slides::-webkit-scrollbar,
+    .slides::-webkit-scrollbar-thumb,
+    .slides::-webkit-scrollbar-track {
+      display: none;
+    }
+    .slides > figure {
+      margin: 0 0 2rem 0;
+    }
+    figure .full-display .close-button {
+      width: 3rem;
+      height: 3rem;
+      fill: var(--quaternary-color);
+      margin-right: 0.5rem;
+      position: absolute;
+      top: 0.5rem;
+      right: 0.25rem;
+    }
+  }
 }
 
 @layer about {
@@ -362,6 +418,23 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+  }
+  @media (max-width: 700px) {
+    #about {
+      padding: 2rem 0 2rem 0;
+    }
+
+    #about h2 {
+      text-align: center;
+      font-size: var(--h4);
+    }
+    .grid-container {
+      display: flex;
+      flex-direction: column;
+    }
+    #about p {
+      font-size: calc(0.85 * var(--base-size));
+    }
   }
 }
 
@@ -403,9 +476,26 @@
     align-items: center;
   }
 
+  .contact-box a {
+    color: var(--primary-color);
+  }
+
   .contact-box a:hover {
     cursor: pointer;
     transform: scale(1.1);
     color: var(--quinary-color);
+  }
+
+  @media (max-width: 700px) {
+    .line-left,
+    .line-right {
+      width: 30%;
+    }
+    .title-box p {
+      width: 40%;
+    }
+    .title-box {
+      text-align: center;
+    }
   }
 }

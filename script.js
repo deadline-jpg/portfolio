@@ -2,6 +2,7 @@ const projectSlides = document.querySelector(".slides");
 const menuBtn = document.querySelector(".menu-button");
 const nav = document.querySelector(".nav");
 const closeMenu = document.querySelector(".close-menu");
+const body = document.querySelector(".body");
 
 // Load project data for index.html
 fetch("projects.json")
@@ -71,6 +72,7 @@ menuBtn.addEventListener("click", () => {
   nav.classList.add("nav-visible");
   menuBtn.classList.add("menu-hide");
   closeMenu.classList.add("close-show");
+  body.classList.add("body-no-scroll");
 });
 
 // Handle hamburger menu close
@@ -78,4 +80,5 @@ closeMenu.addEventListener("click", () => {
   nav.classList.remove("nav-visible");
   menuBtn.classList.remove("menu-hide");
   closeMenu.classList.remove("close-show");
+  body.classList.remove("body-no-scroll");
 });
