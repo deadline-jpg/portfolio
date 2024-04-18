@@ -36,7 +36,7 @@ fetch("projects.json")
 function printTile(element) {
   projectSlides.innerHTML += `
     <figure class="project-figure" id="slide-${element.id}">
-                <img src="${element.img}" alt="project screenshot"
+                <img src="${element.img}" alt="${element.alt}"
               />
               <figcaption class="caption">
                 <?xml version="1.0" encoding="UTF-8"?>
