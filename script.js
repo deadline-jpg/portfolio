@@ -1,4 +1,7 @@
 const projectSlides = document.querySelector(".slides");
+const menuBtn = document.querySelector(".menu-button");
+const nav = document.querySelector(".nav");
+const closeMenu = document.querySelector(".close-menu");
 
 // Load project data for index.html
 fetch("projects.json")
@@ -62,3 +65,17 @@ function printTile(element) {
               </figcaption>
             </figure>`;
 }
+
+// Handle hamburger menu open
+menuBtn.addEventListener("click", () => {
+  nav.classList.add("nav-visible");
+  menuBtn.classList.add("menu-hide");
+  closeMenu.classList.add("close-show");
+});
+
+// Handle hamburger menu close
+closeMenu.addEventListener("click", () => {
+  nav.classList.remove("nav-visible");
+  menuBtn.classList.remove("menu-hide");
+  closeMenu.classList.remove("close-show");
+});
