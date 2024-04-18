@@ -24,6 +24,23 @@
   header a:hover {
     color: var(--quinary-color);
   }
+
+  header .menu-button {
+    background-color: rgb(0 0 0 / 0);
+    border: 0;
+    display: none;
+  }
+
+  header .menu-button span {
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+  }
+
+  header .menu-button span:hover {
+    transform: scale(1.1);
+    color: var(--quinary-color);
+  }
+
   nav {
     font-weight: 400;
     margin: 0;
@@ -47,6 +64,46 @@
   nav span:hover {
     color: var(--quinary-color);
   }
+
+  @media (max-width: 700px) {
+    header .menu-button {
+      display: block;
+    }
+    nav {
+      position: absolute;
+      width: 100vw;
+      height: 100vh;
+      background-color: var(--primary-color);
+      top: 60px;
+      left: -100%;
+      padding-top: 60px;
+    }
+
+    nav .nav-visible {
+      left: 0;
+    }
+
+    nav ul {
+      flex-direction: column;
+      justify-content: space-around;
+      height: 80%;
+    }
+
+    nav li {
+      font-size: var(--h2);
+    }
+nav li span {
+  font-size: var(--h2);
+}
+
+    .header {
+      display: flex;
+      align-items: center;
+    }
+    header h1 {
+      font-size: var(--h4);
+  }
+
 }
 
 @layer intro {
