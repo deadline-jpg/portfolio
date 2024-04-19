@@ -3,6 +3,7 @@ const menuBtn = document.querySelector(".menu-button");
 const nav = document.querySelector(".nav");
 const closeMenu = document.querySelector(".close-menu");
 const body = document.querySelector(".body");
+const navLinks = document.querySelectorAll(".nav-link");
 
 // Load project data for index.html
 fetch("projects.json")
@@ -81,4 +82,12 @@ closeMenu.addEventListener("click", () => {
   menuBtn.classList.remove("menu-hide");
   closeMenu.classList.remove("close-show");
   body.classList.remove("body-no-scroll");
+});
+
+// Remove the body-no-scroll when any nav link clicked
+navLinks.forEach((navLink) => {
+  navLink.addEventListener("click", () => {
+    body.className = "body";
+    nav.classList.remove("nav-visible");
+  });
 });
