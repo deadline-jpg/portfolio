@@ -2,7 +2,7 @@
   "data": [
     {
       "id": 1,
-      "img": "/images/project1.jpg",
+      "img": "images/project1.jpg",
       "alt": "software on computer screen",
       "name": "Some Future Project",
       "tech1": "HTML",
@@ -14,7 +14,7 @@
     },
     {
       "id": 2,
-      "img": "/images/project2.jpg",
+      "img": "images/project2.jpg",
       "alt": "clasped hands",
       "name": "Another Future Project",
       "tech1": "React",
@@ -26,7 +26,7 @@
     },
     {
       "id": 3,
-      "img": "/images/project3.jpg",
+      "img": "images/project3.jpg",
       "alt": "glowing cables",
       "name": "And Another One",
       "tech1": "PHP",
