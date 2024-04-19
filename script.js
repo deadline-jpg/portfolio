@@ -89,5 +89,7 @@ navLinks.forEach((navLink) => {
   navLink.addEventListener("click", () => {
     body.className = "body";
     nav.classList.remove("nav-visible");
+    menuBtn.classList.remove("menu-hide");
+    closeMenu.classList.remove("close-show");
   });
 });
